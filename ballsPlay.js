@@ -135,7 +135,7 @@ function init(){
 	new game(400,300);
 	document.getElementById("start").addEventListener("click", function(){
 		arcanoid=new game(400,300);
-		arcanoid.start(50);
+		arcanoid.start(150);
 	});
 	document.getElementById("finish").addEventListener("click", function(){
 		arcanoid.stop();
