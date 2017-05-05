@@ -136,9 +136,11 @@ function init(){
 	document.getElementById("start").addEventListener("click", function(){
 		arcanoid=new game(400,300);
 		arcanoid.start(150);
+		document.getElementById("start").disabled=True;
 	});
 	document.getElementById("finish").addEventListener("click", function(){
 		arcanoid.stop();
+		document.getElementById("start").disabled=False;
 	});
 }
 
